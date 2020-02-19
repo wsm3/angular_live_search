@@ -1,0 +1,16 @@
+<section class="site-title no-image">
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="site-name">GitHub Repositories search</h1>
+      <h2 class="site-description">Enter the repositories name...</h2>
+    </div>
+    <div class="hero-search">
+      <div class="search">
+        <form class="search-form" onsubmit="return false">
+          <i class="search-icon fas fa-search"></i>
+          <input type="text" class="search-input" (input)="searchRepo($event.target.value)" placeholder="Type your keywords...">
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

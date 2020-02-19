@@ -1,0 +1,19 @@
+<main id="site-main" class="container" >
+  <app-loader></app-loader>
+  <div class="tag-list" *ngIf="list$ | async as repo_list else no_results">
+    <span *ngFor="let repo of repo_list.items">
+      <app-repository-card  [repo]="repo"></app-repository-card>
+    </span>
+  </div>
+</main>
+
+<ng-template #no_results>
+  <div class="center">
+    <img src="./assets/no_result.png" alt="">
+  </div>
+</ng-template>
+
+
+
+
+
